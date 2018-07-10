@@ -1,7 +1,7 @@
 <?php
 $dsn = 'mysql:dbname=logistic;host=127.0.0.1';
 $login = 'root';
-$password = 'admin';
+$password = '';
 $options = array(PDO::MYSQL_ATTR_INIT_COMMAND => 'SET NAMES utf8');
 
 try {

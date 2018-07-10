@@ -9,6 +9,8 @@ spl_autoload_register(function($class){
 
 $controller = new SiteController($dbObject);
 
+echo $_SERVER['DOCUMENT_ROOT'];
+
 if(empty($_SESSION['item_user']) && empty($_COOKIE['item_user']))
 {
     echo $controller->checkData();
@@ -43,7 +45,7 @@ else
     }
     else if(!empty($_GET['user']) && !empty($_GET['type']))
     {
-        echo $controller->showUser(array('user' => $_GET['user'], 'type' => $_GET['type']));
+        //echo $controller->showUser(array('user' => $_GET['user'], 'type' => $_GET['type']));
     }
     else if(!empty($_GET['edit_cargo']))
     {
